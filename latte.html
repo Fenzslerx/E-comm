@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LATTE</title>
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- global style -->
+    <link rel="stylesheet" href="global.css" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- internal style -->
+    <style>
+      /* Products Section */
+      .products {
+        padding: 30px 0;
+        background-color: var(--gray);
+      }
+      .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .card {
+        width: 18rem;
+      }
+      /* Products Section */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav>
+      <div class="container">
+        <div class="nav-container">
+          <a class="nav-logo" href="/">CoffeeSule</a>
+          <div class="nav-menu-toggle" id="nav-menu-toggle">
+            <i class="bx bx-menu icon"></i>
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="register.html"
+                ><i class="bx bx-user-plus icon"></i> ลงทะเบียน</a
+              >
+            </li>
+            <li>
+              <a href="login.html"
+                ><i class="bx bx-user-circle icon"></i> เข้าสู่ระบบ</a
+              >
+            </li>
+            <li>
+              <a href="cart.html"
+                ><i class="bx bx-cart icon"></i> ตะกร้าสินค้า</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <style>
+      .nav-menu-toggle {
+        display: none;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+          flex-direction: column;
+          padding: 20px 0;
+          width: 100%;
+          position: absolute;
+          top: 90px; /* Adjust based on your navbar height */
+          left: 0;
+          background-color: white; /* Adjust based on your design */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .nav-menu-toggle {
+          display: block;
+        }
+        .nav-menu.active {
+          display: flex;
+        }
+      }
+    </style>
+    <script>
+      document
+        .getElementById("nav-menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-menu").classList.toggle("active");
+        });
+    </script>
+    <!-- Navbar Section -->
+    <!-- Category Section -->
+    <section class="category">
+      <div class="container">
+        <div class="category-container">
+          <ul class="category-menu">
+            <li><a href="black_coffee.html">Black coffee</a></li>
+            <li><a href="expresso.html">Espresso</a></li>
+            <li><a href="latte.html">Latte</a></li>
+            <li><a href="milk_coffee.html">Milk Coffee</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Category Section -->
+    <!-- Special Section -->
+    <section class="special">
+      <div class="container">
+        <div class="special-container">
+          <h1>โปรโมชั่นพิเศษ ถึง 30 ตุลาคมนี้เท่านั้น!!</h1>
+          <h1>รับส่วนลด ฿250 เมื่อซื้อกาแฟรสชาติใดก็ได้ครบ ฿3,500</h1>
+          <p>
+            สำหรับสมาชิกเท่านั้น | ไม่สามารถใช้สิทธิ์ร่วมกับโปรโมชั่นอื่นๆ ได้ |
+            เป็นไปตามเงื่อนไข
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Special Section -->
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-container">
+          <h1>LATTE</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section -->
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <div class="products-container">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/products/latte/Kazaar.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 80%; height: 80%; margin: 10px 10%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kazaar</h5>
+              <p class="card-text">
+                ฿24.00 / แคปซูล <br />
+                ฿240.00 / 10 แคปซูล
+              </p>
+              <a href="#" class="btn btn-primary">เพิ่มสินค้าลงตะกร้า</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/products/latte/images.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 80%; height: 80%; margin: 10px 10%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Venezia</h5>
+              <p class="card-text">
+                ฿24.00 / แคปซูล <br />
+                ฿240.00 / 10 แคปซูล
+              </p>
+              <a href="#" class="btn btn-primary">เพิ่มสินค้าลงตะกร้า</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/products/latte/Chiaro.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 80%; height: 80%; margin: 10px 10%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chiaro</h5>
+              <p class="card-text">
+                ฿24.00 / แคปซูล <br />
+                ฿240.00 / 10 แคปซูล
+              </p>
+              <a href="#" class="btn btn-primary">เพิ่มสินค้าลงตะกร้า</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/products/latte/Corto.webp"
+              class="card-img-top"
+              alt="..."
+              style="width: 80%; height: 80%; margin: 10px 10%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Corto</h5>
+              <p class="card-text">
+                ฿27.00 / แคปซูล <br />
+                ฿270.00 / 10 แคปซูล
+              </p>
+              <a href="#" class="btn btn-primary">เพิ่มสินค้าลงตะกร้า</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/products/latte/Arpeggio.png"
+              class="card-img-top"
+              alt="..."
+              style="width: 80%; height: 80%; margin: 10px 10%"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Arpeggio</h5>
+              <p class="card-text">
+                ฿27.00 / แคปซูล <br />
+                ฿270.00 / 10 แคปซูล
+              </p>
+              <a href="#" class="btn btn-primary">เพิ่มสินค้าลงตะกร้า</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section -->
+    <!-- Coffees Section -->
+    <section class="coffees">
+      <div class="container">
+        <div class="coffees-container">
+          <h1>หมวดหมู่สินค้า</h1>
+          <div class="coffees-cards">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/assets/category/Cover-Espresso-1080x675 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Espresso / เอสเปรสโซ่</h5>
+                <a href="expresso.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="/assets/category/images 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black coffee/กาแฟดำ</h5>
+                <a href="black_coffee.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="/assets/category/95bcea87-d77c-4236-9cb2-39229c61b15c 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Milk Coffee / กาแฟนม</h5>
+                <a href="milk_coffee.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coffees-image"></div>
+    </section>
+    <!-- Coffees Section -->
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-products">
+            <h1>สินค้า</h1>
+            <ul class="footer-products-list">
+              <li><a href="black_coffee.html">Black Coffee/กาแฟดำ</a></li>
+              <li><a href="expresso.html">Espresso / เอสเปรสโซ่</a></li>
+              <li><a href="latte.html">Latte / ลาเต้</a></li>
+              <li><a href="milk_coffee.html">Milk Coffee / กาแฟนม</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            
+          </div>
+          <div class="footer-contact">
+            <h1>ติดต่อเรา</h1>
+            <ul class="footer-contact-list">
+              <li><a href="#">นางสาว เบญญภา เตชาธรรมนนท์ 6706022610195</a></li>
+              <li><a href="#">นางสาว มนัญชยา ประยูรมณีรัตน์ 6706022610292</a></li>
+              <li><a href="#">นาย จุลจักร ยมนา 6706022610462</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

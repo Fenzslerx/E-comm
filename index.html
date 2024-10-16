@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeSule</title>
+    <!-- global style -->
+    <link rel="stylesheet" href="global.css" />
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- internal css -->
+    <style>
+      /* Deal Section */
+      .deal {
+        padding: 20px 0;
+        background-color: var(--gray);
+        color: var(--black);
+      }
+      .deal-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      /* Deal Section */
+      /* Header Section */
+      header {
+        padding: 50px 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url(/assets/hero/nespresso.png);
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+      }
+      .header-container {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .header-container p {
+        font-size: 1.5rem;
+        margin: 10px 0 50px 0;
+      }
+      .header-container a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #ffffff;
+        background-color: var(--primary);
+        padding: 15px 50px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+      }
+      .header-container a:hover {
+        background-color: var(--black);
+      }
+      /* Header Section */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav>
+      <div class="container">
+        <div class="nav-container">
+          <a class="nav-logo" href="/index.html">CoffeeSule</a>
+          <div class="nav-menu-toggle" id="nav-menu-toggle">
+            <i class="bx bx-menu icon"></i>
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="register.html"
+                ><i class="bx bx-user-plus icon"></i> ลงทะเบียน</a
+              >
+            </li>
+            <li>
+              <a href="login.html"
+                ><i class="bx bx-user-circle icon"></i> เข้าสู่ระบบ</a
+              >
+            </li>
+            <li>
+              <a href="cart.html"
+                ><i class="bx bx-cart icon"></i> ตะกร้าสินค้า</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <style>
+      .nav-menu-toggle {
+        display: none;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+          flex-direction: column;
+          padding: 20px 0;
+          width: 100%;
+          position: absolute;
+          top: 90px; /* Adjust based on your navbar height */
+          left: 0;
+          background-color: white; /* Adjust based on your design */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .nav-menu-toggle {
+          display: block;
+        }
+        .nav-menu.active {
+          display: flex;
+        }
+      }
+    </style>
+    <script>
+      document
+        .getElementById("nav-menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-menu").classList.toggle("active");
+        });
+    </script>
+    <!-- Navbar Section -->
+    <!-- Category Section -->
+    <section class="category">
+      <div class="container">
+        <div class="category-container">
+          <ul class="category-menu">
+            <li><a href="black_coffee.html">Black coffee</a></li>
+            <li><a href="expresso.html">Espresso</a></li>
+            <li><a href="latte.html">Latte</a></li>
+            <li><a href="milk_coffee.html">Milk Coffee</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Category Section -->
+    <!-- Deal Section -->
+    <section class="deal">
+      <div class="container">
+        <div class="deal-container">
+          <i class="bx bx-package icon"></i>
+          <p>บริการจัดส่งฟรีเมื่อซื้อสินค้าครบ ฿2,000</p>
+        </div>
+      </div>
+    </section>
+    <!-- Deal Section -->
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <h1>โปรโมชั่นพิเศษ ถึง 30 ตุลาคมนี้เท่านั้น!!</h1>
+          <p>**ลดสูงสุด ฿3,000 เมื่อซื้อสินค้าที่ร่วมรายการ**</p>
+          <a href="#">ซื้อเลย</a>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section -->
+    <!-- Coffees Section -->
+    <section class="coffees">
+      <div class="container">
+        <div class="coffees-container">
+          <h1>หมวดหมู่สินค้า</h1>
+          <div class="coffees-cards">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../assets/category/images 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black coffee/กาแฟดำ</h5>
+                <a href="black_coffee.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="assets/category/Cover-Espresso-1080x675 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Espresso / เอสเปรสโซ่</h5>
+                <a href="expresso.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="assets/category/937cadcd-2fed-4cca-a111-8bad7fbd54f8 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Latte / ลาเต้</h5>
+                <a href="latte.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="assets/category/95bcea87-d77c-4236-9cb2-39229c61b15c 1.png"
+                class="card-img-top"
+                alt="dark_coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Milk Coffee / กาแฟนม</h5>
+                <a href="milk_coffee.html" class="btn btn-primary">ซื้อเลย</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coffees-image"></div>
+    </section>
+    <!-- Coffees Section -->
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-products">
+            <h1>สินค้า</h1>
+            <ul class="footer-products-list">
+              <li><a href="black_coffee.html">Black Coffee/กาแฟดำ</a></li>
+              <li><a href="expresso.html">Espresso / เอสเปรสโซ่</a></li>
+              <li><a href="latte.html">Latte / ลาเต้</a></li>
+              <li><a href="milk_coffee.html">Milk Coffee / กาแฟนม</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            
+          </div>
+          <div class="footer-contact">
+            <h1>ติดต่อเรา</h1>
+            <ul class="footer-contact-list">
+              <li><a href="#">นางสาว เบญญภา เตชาธรรมนนท์ 6706022610195</a></li>
+              <li><a href="#">นางสาว มนัญชยา ประยูรมณีรัตน์ 6706022610292</a></li>
+              <li><a href="#">นาย จุลจักร ยมนา 6706022610462</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
